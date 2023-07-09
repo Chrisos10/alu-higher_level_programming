@@ -1,1 +1,1 @@
-This repo is about Python - Hello, World tasks.
+This repo is about Python.
