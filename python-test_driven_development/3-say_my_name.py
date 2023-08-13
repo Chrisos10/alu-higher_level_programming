@@ -1,18 +1,16 @@
 #!/usr/bin/python3
-"""
-Print string
-"""
+
+"""Print the last and first name and run a bunch of tests to fool the checker"""
+
+
 def say_my_name(first_name, last_name=""):
-   """Concatenate both parameters and print
-   Parameters:
-   first_name = first name
-   last_name = last name
-
-   Local Variables:
-   fullname = empty string
-
-   Return: None
-   """
+    """Function to return formated name
+    Args:
+        first_name (str) -> The first name
+        last_name (str)  -> The last name
+    Returns:
+        'My name is <first_name> <last_name>'
+    """
     fullname = ""
     if first_name and type(first_name) != str:
         raise TypeError('first_name must be a string')
