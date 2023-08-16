@@ -1,15 +1,18 @@
 #!/usr/bin/python3
+"""
+Write a function that prints My name is <first name> <last name>
 
-"""Print the last and first name and run a bunch of tests"""
+Run tests and raise TypeError in case of invalid inputs
+"""
 
 
 def say_my_name(first_name, last_name=""):
-    """Function to return formated name
-    Args:
-        first_name (str) -> The first name
-        last_name (str)  -> The last name
-    Returns:
-        'My name is <first_name> <last_name>'
+    """
+    first_name and last_name must be strings otherwise,
+
+    raise a TypeError exception with the message first_name
+
+    must be a string or last_name must be a string
     """
     try:
         if not isinstance(first_name, str):
