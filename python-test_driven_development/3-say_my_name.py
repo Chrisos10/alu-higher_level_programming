@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Print the last and first name and run a bunch of tests to fool the checker"""
+"""Print the last and first name and run a bunch of tests"""
 
 
 def say_my_name(first_name, last_name=""):
@@ -11,13 +11,13 @@ def say_my_name(first_name, last_name=""):
     Returns:
         'My name is <first_name> <last_name>'
     """
-    fullname = ""
-    if first_name and type(first_name) != str:
-        raise TypeError('first_name must be a string')
-    elif first_name and type(first_name) == str:
-        fullname += first_name + " "
-    if last_name and type(last_name) != str:
-        raise TypeError('last_name must be a string')
-    elif last_name and type(last_name) == str:
-        fullname += last_name
-    print("My name is {:s}".format(fullname))
+    try:
+        if not isinstance(first_name, str):
+            raise TypeError("first_name must be a string")
+        elif not isinstance(last_name, str):
+            raise TypeError("last_name must be a string")
+    except TypeError:
+        raise
+    else:
+        return print("My name is {} {}".format(first_name, last_name))
+
