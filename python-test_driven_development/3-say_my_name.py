@@ -22,5 +22,4 @@ def say_my_name(first_name, last_name=""):
     except TypeError:
         raise
     else:
-        return print("My name is {} {}".format(first_name, last_name))
-
+        return print("My name is '{} {}'".format(first_name, last_name))
