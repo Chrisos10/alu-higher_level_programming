@@ -4,6 +4,7 @@ A function that prints a square with the character #
 Run tests for invalid inputs and raise error
 """
 
+
 def print_square(size):
     """ Function to print squares of '#'
     Args:
