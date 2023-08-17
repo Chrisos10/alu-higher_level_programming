@@ -59,4 +59,3 @@ class TestBase(unittest.TestCase):
         self.assertEqual(json.dumps(self.base8), "[]")
         self.assertEqual(json.dumps(self.base9), '[{"id": 89}]')
         self.assertEqual(json.dumps(self.base10), '[{"id": 89}]')
-
