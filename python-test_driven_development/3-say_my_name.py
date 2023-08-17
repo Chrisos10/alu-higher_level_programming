@@ -2,7 +2,7 @@
 """
 Write a function that prints My name is <first name> <last name>
 
-Run tests and raise TypeError in case of invalid inputs
+Prototype: def say_my_name(first_name, last_name="")
 """
 
 
