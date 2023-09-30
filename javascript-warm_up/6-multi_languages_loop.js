@@ -1,5 +1,7 @@
 #!/usr/bin/node
-const args = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-for (const line of args) {
-  console.log(line);
+let i = 0;
+const arrayStrings = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+while (i < arrayStrings.length) {
+  console.log(arrayStrings[i]);
+  ++i;
 }
