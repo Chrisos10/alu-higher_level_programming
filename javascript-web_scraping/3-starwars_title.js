@@ -1,15 +1,12 @@
-
 #!/usr/bin/node
-const request = require('request');
-const movieID = parseInt(process.argv[2]);
-const url = 'https://swapi-api.hbtn.io/api/films/' + movieID;
 
-request(url, function (error, response, body) {
+const req = require('request');
+const url = 'https://swapi-api.hbtn.io/api/films/';
+const id = process.argv[2];
+req.get(url + id, function (error, res, body) {
   if (error) {
     console.log(error);
   } else {
-    if (response.statusCode === 200) {
-      console.log(JSON.parse(body).title);
-    }
+    console.log(JSON.parse(body).title);
   }
 });
